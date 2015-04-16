@@ -9,10 +9,10 @@ var keyPress=false;
 
 function setup() {
   createCanvas(1000, 500);
-  colorMode(HSB);
+  colorMode(HSB,100);
 
   for (var i = 0; i < 10; i++) {
-    tint=color(random(10, 30),55,100);
+    tint=color(random(30, 60),50,100);
     movers[i] = new Mover(tint, random(1, 4), random(width), 0);
   }
 }
